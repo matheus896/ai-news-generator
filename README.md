@@ -48,7 +48,7 @@ Para executar o Gerador de Notícias com IA localmente, siga estes passos:
 1.  **Clone o repositório:**
 
     ```bash
-    git clone [YOUR_REPOSITORY_URL] # Substitua com o URL do seu repositório
+    git clone https://github.com/matheus896/ai-news-generator.git # Substitua com o URL do seu repositório
     cd AI-news-generator
     ```
 
@@ -73,6 +73,7 @@ Para executar o Gerador de Notícias com IA localmente, siga estes passos:
 
         ```env
         SERPER_API_KEY=SUA_CHAVE_DE_API_SERPER
+        CEREBRAS_API_KEY=SUA_CHAVE_DE_API_CEREBRAS
         ```
 
     *   **Nota:** A aplicação atualmente utiliza `cerebras/llama-3.3-70b` como o LLM padrão. Assegure-se de ter acesso a este modelo, se necessário, ou você pode modificar o arquivo `app.py` para usar um LLM diferente de sua escolha ajustando a configuração `llm` dentro da função `generate_content`. Se você mudar para outro LLM, você pode precisar configurar sua chave de API e quaisquer outras credenciais necessárias como variáveis de ambiente e atualizar o `app.py` de acordo.
